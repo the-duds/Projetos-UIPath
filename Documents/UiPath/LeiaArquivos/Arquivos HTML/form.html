@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Tipo de Documento</h2>
+
+    <form>
+        <br><br>
+        <input type="submit" value="NFE" id="Nfe">
+        
+    </form>
+
+
+
+    <script>
+
+        document.getElementById('Nfe').onclick = function () {
+
+            
+            var tipodoc = "Nota Fiscal"
+            // Aqui está a parte importante. Para que um seja válido em termos de atividade, a seguinte linha precisa ser incluída e chamada em algum momento da execução do formulário.
+            //Depois que o comando é chamado, uma string pode ser passada de volta ao UiPath e o formulário será fechado
+            window.external.setResult(tipodoc);
+        };
+    
+       
+    </script>
+
+</body>
+</html>
